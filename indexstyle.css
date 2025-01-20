@@ -1,0 +1,257 @@
+/* Global Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background: blue;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Menu icon */
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .navbar {
+    display: block;
+    flex-direction: column;
+    background: blue;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+}
+
+section .section-content h1 {
+    color: black;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section .section-content h2 {
+    color: blue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section img {
+    height: 400px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: blue;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-left h4, .footer-center h4, .footer-right h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-left ul, .footer-center ul, .footer-right ul {
+    list-style: none;
+}
+
+.footer-left li, .footer-center li, .footer-right li {
+    margin-bottom: 5px;
+}
+
+.footer-left a, .footer-center a, .footer-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-center a:hover, .footer-right a:hover {
+    color: blue;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+}
+
+.navbar li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: lightskyblue;
+    color:blue;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: lavender;
+}
+
+section {
+    background-color: lavenderblush;
+}
+
+ section .section-content h1{
+    color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+
+ section .section-content h2{
+    color: gray;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+
+ section img{
+    height: 600px;
+    width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background: blue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-row  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.footer-col ul li a:hover {
+    color: darkblue;
+}
+
+.footer-col form {
+    margin-top: 10px;
+}
+
+.footer-col input {
+    padding: 5px;
+    border: none;
+}
+
+.footer-col button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-col button:hover {
+    background: blue;
+}
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:che {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .menu-icon {
+        display: block
+    }
+
+
+}
+
+
